@@ -1,0 +1,23 @@
+<div class="logBox">
+    <div class="innerbox">
+            <form  (ngSubmit)='onSave(f)' #f="ngForm">
+             
+               <div class="formgroup">
+               <label for="username" name="username" id="userlabel"> USERNAME </label>
+               <br>
+               <input type="text" id="username" name="username" placeholder="username" ngModel>
+               </div>
+              
+              <br><br>
+              <div class="formgroup">
+              <label for="password">PASSWORD</label>
+              <br>
+              <input type="password" name="password" id="password" placeholder="password" ngModel>
+               </div>
+               
+              <br>
+              <br>
+               <button type="submit" class="btn btn-success loginbutton">Login</button>
+              </form> 
+            </div>
+</div>

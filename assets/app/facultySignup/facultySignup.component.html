@@ -1,0 +1,78 @@
+
+ <div class="logBox">
+        <form  (ngSubmit)='onSubmit(f)' #f="ngForm">
+         
+          
+          <div class="formgroup">
+            <label for="staffid" name="staffid"> STAFFID </label>
+            <br>
+            <input type="text" id="staffid" name="staffid" ngModel>
+          </div>
+           
+            <br><br>
+          
+          <div class="formgroup">
+           <label for="name" name="name"> NAME </label>
+           <br>
+           <input type="text" id="name" name="name" ngModel>
+          </div>
+          
+           <br><br>
+          
+
+           <div class="formgroup">
+            <label for="password" name="password"> PASSWORD </label>
+            <br>
+            <input type="password" id="password" name="password" ngModel>
+           </div>
+           
+            <br><br>
+           
+
+          
+
+           <div class="formgroup">
+                <h6>CHOOSE DATE OF BIRTH</h6>
+                  <input type="date" name="dateofbirth" id="dateofbirth" ngModel>
+            </div>
+
+        
+          <br><br>
+
+          <div class="formgroup">
+            <label for="gender" name="gender"> GENDER </label>
+            <div class="radio" *ngFor="let gender of genders">
+              <label>
+                <input type="radio" name="gender" ngModel [value]="gender">{{gender}}
+              </label>
+            </div>  
+    
+        </div>
+
+          
+           
+            <br><br>
+          
+
+            <div class="formgroup">
+              <label for="email" name="email"> EMAIL </label>
+              <br>
+              <input type="text" id="email" name="email" ngModel>
+             </div>
+             
+              <br><br>
+
+
+
+          <div class="formgroup">
+                <label for="phone" name="phone"> PHONE </label>
+                <br>
+                <input type="text" id="phone" name="phone" ngModel>
+           </div>
+           
+           
+        <br><br>
+
+          <button type="submit" class="btn btn-success">Login</button>
+          </form>
+      </div>

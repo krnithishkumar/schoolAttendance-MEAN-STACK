@@ -1,0 +1,96 @@
+<div class="container">
+ <div class="logBox">
+        <form  (ngSubmit)='onSubmit(f)' #f="ngForm">
+
+          
+
+
+          <div class="formgroup">
+            <label for="studentid" name="studentid"> STUDENT ID </label>
+            <br>
+            <input type="text" id="studentid" name="studentid" ngModel>
+           </div>
+           
+            <br><br>
+
+           <div class="formgroup">
+           <label for="name" name="name"> NAME </label>
+           <br>
+           <input type="text" id="name" name="name" ngModel>
+           </div>
+          
+           <br><br>
+
+
+            <div class="formgroup">
+              <label for="fathersname" name="fathersname"> FATHERS NAME </label>
+              <br>
+              <input type="text" id="fathersname" name="fathersname" ngModel>
+              </div>
+              
+              <br><br>
+              
+             <div class="formgroup">
+              <label for="mothersname" name="mothersname"> MOTHERS NAME </label>
+              <br>
+              <input type="text" id="mothersname" name="mothersname" ngModel>
+              </div>
+  
+             <br><br>
+  
+
+           <div class="formgroup">
+                <h6>CHOOSE DATE OF BIRTH</h6>
+                  <input type="date" name="dateofbirth" id="dateofbirth" ngModel>
+            </div>
+
+          
+          <br><br>
+
+          <div class="formgroup">
+            <label for="gender" name="geder"> GENDER </label>
+            <br>
+            <div class="select-style">
+              <select name="gender" id="gender" ngModel>
+              <option *ngFor="let gender of genders">{{gender}}</option>
+              </select>
+          </div>
+        </div>
+
+        <br><br>
+
+
+          <div class="formgroup">
+            <label for="age" name="age"> AGE </label>
+            <br>
+            <input type="number" id="age" name="age" ngModel>
+        </div>
+
+        <br><br>
+
+          <div class="formgroup">
+                <label for="phone" name="phone"> PHONE </label>
+                <br>
+                <input type="text" id="phone" name="phone" ngModel>
+           </div>
+           
+           <br><br>
+
+          <div class="formgroup">
+            <label for="classid" name="classid"> CLASSID </label>
+            <br>
+            <div class="select-style">
+              <select name="classid" id="classid" ngModel>
+              <option *ngFor="let class of classes">{{class}}</option>
+              </select>
+          </div>
+          </div>
+       
+            <br><br>
+          
+
+          <button type="submit" class="btn btn-success">Login</button>
+          </form>
+      </div>
+
+    </div>

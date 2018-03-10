@@ -1,0 +1,49 @@
+.logBox{
+    border: solid;
+    padding:20px;
+    border-color: white;
+    width: 1170px;
+    height: 1160px;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    background-image: url('tower.jpg');
+    backface-visibility: visible;
+  }
+  
+  .logBox input[type="text"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    backface-visibility: visible;
+    background: transparent;
+    border-bottom: 1px solid black;
+    }
+
+    #password{
+      border: none;
+      outline: none;
+      height: 40px;
+      font-size: 16px;
+      background: transparent;
+      backface-visibility: visible;
+      border-bottom: 1px solid black;
+    }
+.innerbox{
+  position: absolute;
+  width: 300px;
+  left:500px;
+  top:150px;
+}
+
+
+#userlable{
+  left: 40px;
+  position: absolute;
+}
+
+.loginbutton{
+  position: absolute;
+  width: 190px;
+}
