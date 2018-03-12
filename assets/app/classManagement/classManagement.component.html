@@ -1,0 +1,33 @@
+
+ <div class="logBox">
+    <form  (ngSubmit)='onSubmit(f)' #f="ngForm">
+     
+      
+      <div class="formgroup">
+        <label for="classid" name="classid"> CLASSID </label>
+        <br>
+        <input type="text" id="classid" name="classid" ngModel>
+      </div>
+       
+        <br><br>
+      
+        <div class="formgroup">
+            <label for="standard" name="standard"> STANDARD </label>
+            <br>
+            <input type="number" id="standard" name="standard" ngModel>
+          </div>
+           
+            <br><br>
+      
+            <div class="formgroup">
+                <label for="section" name="section"> CLASSID </label>
+                <br>
+                <input type="text" id="section" name="section" ngModel>
+              </div>
+               
+                <br><br>
+              
+
+      <button type="submit" class="btn btn-success">Login</button>
+      </form>
+  </div>

@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 
 var schema = new Schema({
-    batchid:String,
+    classid:String,
     students:[Number],
     standard:Number,
     section:String

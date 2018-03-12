@@ -23,9 +23,8 @@ export class facultySignupComponent {
         let k=(f.value);
         let g;
         
+        const user = new User(k.staffid,k.password,k.name,k.dateofbirth,k.gender,k.email,k.phone);
 
-       // const user =new User(k.staffid,k.password,k.name,k.dateodbirth,k.gender,k.email,k.phone,k.classid);
-       const user =new User(k.staffid,k.password,k.name.toUppserCase(),k.dateofbirth,k.gender,k.email,k.phone);
 
         this.authservice.signUp(user)
         .subscribe(

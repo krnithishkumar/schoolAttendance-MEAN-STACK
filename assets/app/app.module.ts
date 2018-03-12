@@ -8,13 +8,15 @@ import { FormsModule } from '@angular/forms';
 import { studentSignupComponent } from './studentSignup/studentSignup.component';
 import { facultySignupComponent } from './facultysignup/facultysignup.component';
 import { classManagementComponent } from './classManagement/classManagement.component';
+import { homeComponent } from './home/home.component';
 
 @NgModule({
     declarations: [AppComponent,
                 loginComponent, 
                 studentSignupComponent,
                 facultySignupComponent,
-                classManagementComponent],
+                classManagementComponent,
+            homeComponent],
     imports: [BrowserModule,
               FormsModule,
               HttpModule 

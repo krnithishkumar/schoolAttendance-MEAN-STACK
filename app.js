@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var appRoutes = require('./routes/app');
 var userRoutes = require('./routes/user');
 var studentRoutes = require('./routes/student');
+var classRoutes= require('./routes/class');
 
 var mongoose = require('mongoose');
 
@@ -36,6 +37,8 @@ app.use(function(req, res, next) {
   next();
 });
 
+
+app.use('/class',classRoutes);
 app.use('/student',studentRoutes);
 app.use('/user',userRoutes);
 app.use('/', appRoutes);

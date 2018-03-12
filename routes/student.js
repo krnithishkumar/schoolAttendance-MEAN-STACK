@@ -4,6 +4,30 @@ var router = express.Router();
 
 var Student = require('../models/student');
 
+
+router.get('/',function(req,res,next){
+
+  Student.find()
+  .exec(function(err,students){
+  
+     if(err){
+       return res.status(500).json({
+         title:'error occured',
+         error:err
+       });
+     }
+     res.status(200).json({
+       message:'success',
+       obj : students
+     });
+     
+  });
+
+
+});
+
+
+
 router.post('/', function(req, res, next) {
   
       var user = new Student({
@@ -32,5 +56,7 @@ router.post('/', function(req, res, next) {
     
     });
 });
+
+
 
 module.exports = router;
